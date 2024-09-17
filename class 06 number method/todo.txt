@@ -1,0 +1,5 @@
+1. Data type using typeof() function
+2. Convert any data type to string using toString() function
+3. Convert to number type using parseInt() parseFloat() function
+4. toFixed() toPrecision() function
+5. console.log("Number")
