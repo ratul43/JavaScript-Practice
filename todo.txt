@@ -1,0 +1,6 @@
+1. Found the length of the string using "text.length" function
+2. User input by using prompt() function 
+3. Find any string index character by using charAt() function 
+4. Uppercase any character using toUppercase() function 
+5. Lowercase any character using toLowercase() function 
+6.  
