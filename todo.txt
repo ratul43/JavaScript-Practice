@@ -1,6 +1,28 @@
+
+
 1. Found the length of the string using "text.length" function
 2. User input by using prompt() function 
 3. Find any string index character by using charAt() function 
 4. Uppercase any character using toUppercase() function 
 5. Lowercase any character using toLowercase() function 
-6.  
+6. Concate two string using concate() function 
+7. Slice index characters using slice() function 
+
+
+
+
+
+
+
+
+URL : https://www.youtube.com/watch?v=w-HOpmckKF8&list=PLgH5QX0i9K3qzryglMjcyEktz4q7ySunX&index=8
+
+
+
+
+
+
+
+
+
+

@@ -3,3 +3,5 @@
 3. Convert to number type using parseInt() parseFloat() function
 4. toFixed() toPrecision() function
 5. console.log("Number")
+
+https://www.youtube.com/watch?v=uBEKIMJx50E&list=PLgH5QX0i9K3qzryglMjcyEktz4q7ySunX&index=6
