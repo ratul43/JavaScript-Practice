@@ -1,0 +1,6 @@
+1. Arithmetic operation sum, subtraction 
+2. Make basic calculation using 
+    -> Take value from the user 
+    -> Convert to int using parseInt() function which base is 10
+    -> Then do arithmetic operation
+3. 

@@ -1,0 +1,22 @@
+1. Arithmetic operator -> +, -, *, /, % (Modulus), ** (Exponent)
+    -> do arithmetic operator in console
+2. ++, -- 
+3. Assignment operator -> =, +=, -=, *=, %=, **=
+4. Do assignment operator in console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=edlzr3HeGx0&list=PLgH5QX0i9K3qzryglMjcyEktz4q7ySunX&index=10
