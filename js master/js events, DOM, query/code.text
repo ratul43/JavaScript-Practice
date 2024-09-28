@@ -1,0 +1,277 @@
+Part 01
+<--------- Change Text On-Off using DOM---> using id attribute --------->
+
+<body>
+    <h1 id="text"> Hello</h1>
+    <button onclick="ON()">ON</button>
+    <button onclick="OFF()"> OFF </button>
+</body>
+<script>
+
+    function ON(){
+        let text=document.getElementById("text")
+        text.innerText="ON"
+    }
+
+    function OFF(){
+        let text=document.getElementById("text")
+        text.innerText="OFF"
+    }
+
+</script>
+
+
+<--------- Change Text On-Off using DOM---> using class attribute ---------->
+
+    <body>
+    <h1 class="h1Class">.....</h1><br>
+    <h1 class="h1Class">.....</h1>
+    <h1 class="h1Class">.....</h1>
+    <button onclick="ON()">ON</button>
+    <button onclick="OFF()"> OFF </button>
+
+<script>
+
+    function ON(){
+        let h1Element=document.getElementsByClassName ("h1Class")[1]
+        h1Element.innerText="ON"
+    } 
+
+    function OFF(){
+        let h1Element=document.getElementsByClassName("h1Class")[1]
+        h1Element.innerText="OFF"
+    }
+
+</script>
+</body>
+
+
+
+<---------- Change Text ON-OFF Using DOM---> Using Tag Name ----------->
+
+
+Change Text ON-OFF Using DOM---> Using Tag Name
+
+<body>
+    <h1 >.....</h1><br>
+    <h1 >.....</h1>
+    <h1 >.....</h1>
+    <button onclick="ON()">ON</button>
+    <button onclick="OFF()"> OFF </button>
+
+<script>
+
+    function ON(){
+        let h1Element=document.getElementsByTagName("h1")[1]
+        h1Element.innerText="ON"
+    } 
+
+    function OFF(){
+        let h1Element=document.getElementsByTagName("h1")[1]
+        h1Element.innerText="OFF"
+    }
+
+</script>
+</body>
+
+
+<------------ Login Form Take User Name & Password -------------->
+
+    <label> User Name </label>
+    <input id="user" type="text" placeholder="User Name">
+    <br><br>
+    <label> Password </label>
+    <input id="pass" type="password" placeholder="Password">
+    <br><br>
+    <button onclick="onlogin()"> Submit </button>
+
+
+    <script>
+        function onlogin(){
+            let userName=document.getElementById("user").value
+            let passwordvalue=document.getElementById("pass").value
+        
+            let jsonObj= {
+                user_name: userName,
+                password:  passwordvalue
+         }
+        
+         alert(JSON.stringify(jsonObj))
+        
+        }
+    </script>
+
+
+<--------- Make light switch on/off using image src attribute ---------->
+
+    <img id="imgID" src="light off.jpg" alt="">
+    <button onclick="ON()"> ON </button>
+    <button onclick="OFF()"> OFF </button>
+
+    <script>
+        function ON() {
+            let imgElement= document.getElementById("imgID")
+            imgElement.src= "light on.png"
+        }
+        
+        function OFF() {
+            let imgElement= document.getElementById("imgID")
+            imgElement.src= "light off.jpg"
+        }
+
+    </script>
+
+One button method
+
+<img id="imgID" src="light off.jpg" alt="">
+    <button onclick="ON()"> ON </button>
+    <button onclick="OFF()"> OFF </button>
+    <button id="toggleID" onclick="Toggle()"> Light OFF </button>
+    
+    <script>
+        function Toggle(){
+            let imgElement= document.getElementById("imgID")
+            let toggleBtn=document.getElementById("toggleID")   
+            if (toggleBtn.innerText==="Light OFF"){
+                toggleBtn.innerText="Light ON"
+                imgElement.src= "light on.png"
+            }
+            else {
+                toggleBtn.innerText="Light OFF"
+                imgElement.src= "light off.jpg"
+            }
+            
+        
+        }
+            function ON() {
+            let imgElement= document.getElementById("imgID")
+            imgElement.src= "light on.png"
+        }
+        
+        function OFF() {
+            let imgElement= document.getElementById("imgID")
+            imgElement.src= "light off.jpg"
+        }
+        </script>
+
+        /*
+        let imgElement=document.querySelector("#imgID") // #imgID for ID 
+        let imgElement=document.querySelector(".imgClass") // .imgClass for Class  
+        let imgElement=document.querySelector("img") // img for Tag Name 
+        */
+
+    
+    <------------------- Make a counter App using DOM ----------------->
+    
+    
+    <h1> 0 </h1>
+    <button onclick="Plus()">+</button>
+    <button onclick="Minus()">-</button>
+    <script>
+        function Plus(){
+            let h1Element=document.getElementsByTagName('h1')[0]
+            let h1Value= parseInt(h1Element.innerText)
+            let newValue= h1Value+1
+            h1Element.innerText=newValue
+        }
+        function Minus(){
+            let h1Element=document.getElementsByTagName('h1')[0]
+            let h1Value= parseInt(h1Element.innerText)
+            let newValue= h1Value-1
+            h1Element.innerText=newValue
+        }
+    </script>
+
+
+< ---------------------- Write 1,2,3,4... List using Button Click ---------------------------->
+
+<body>
+
+    <button onclick="Add()"> Add Number1</button>
+    <ul>
+
+    </ul>
+    
+    
+    
+    
+    
+    <script>
+    
+    function Add(){
+    // Create a list item
+        
+        let date= new Date()
+        let item= document.createElement("li");
+        item.innerText= date.getMilliseconds()
+
+        let MyList=document.getElementsByTagName('ul')[0]
+        MyList.appendChild(item)
+    }
+    </script>
+
+
+
+----------------------------------------------------------------------
+
+
+
+    <body>
+    <h1> 0 </h1>
+    <button onclick="Plus()"> + </button>
+    <button onclick="Minus()"> - </button>
+    <button onclick="Add()" > Add number </button>
+    <ul>
+
+    </ul>
+    
+  
+    <script>
+        function Add(){
+            // Create A List Item
+            Plus()
+            let item= document.createElement('li');
+            let num= document.getElementsByTagName('h1')[0].innerText
+            item.innerText=num
+
+            let MyList= document.getElementsByTagName('ul')[0]
+            MyList.appendChild(item)
+
+
+        }
+   function Plus(){
+    let h1Element= document.getElementsByTagName('h1')[0]
+    let h1Value=parseInt(h1Element.innerText)
+    let newValue=h1Value+1
+    h1Element.innerText=newValue
+   }
+</script>
+
+
+<------------------------------------------------------------------>
+
+<body>
+
+    <label> Number 01 </label>
+    <input id="num1" type="text">
+    <br><br>
+    <label> Number 02 </label>
+    <input id="num2" type="text">
+    <br><br>
+
+    <button onclick="Add()"> Add </button>
+
+    <h1 id="result"> ..... </h1>
+
+
+    <script>
+        function Add(){
+            let num1= document.getElementById("num1").value 
+            let num2= document.getElementById("num2").value 
+            let sum= parseFloat(num1)+parseFloat(num2)
+     
+            let result= document.getElementById('result')
+                result.innerText=sum 
+            
+        }
+    </script>

@@ -1,0 +1,17 @@
+Loop:
+    - What is loop? 
+    - start, end, step
+    - for loop ( Most Used)
+    - while loop (Rare)
+    - do while loop (Rare)
+    - for in loop, for of loop, for each loop (When in Array)
+
+Function:
+- What is Function? is your action
+- How to write function & Call
+- Parameter Argument
+    - Default Parameter
+    - Function Return 
+    - IIF Function ( Immediatley Invocable Function) - annonymous
+    - Arrow / Lamda Function
+    - Arrow Inline Function 
