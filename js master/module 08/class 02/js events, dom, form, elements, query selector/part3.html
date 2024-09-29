@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS DOM 03</title>
+</head>
+<body>
+    
+
+<h1> .. </h1>
+<h1> .. </h1>
+<h1> .. </h1>
+
+
+
+<button onclick="ON()"> ON </button>
+<button onclick="OFF()"> OFF </button>
+
+
+<script>
+
+    function ON(){
+        let text= document.getElementsByTagName('h1')[0]
+        text.innerText="ON"
+    }
+
+
+    function OFF(){
+        let text= document.getElementsByTagName('h1')[0]
+        text.innerText="OFF"
+    }
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Counter App using DOM </title>
+</head>
+<body>
+    
+
+    <h1> 0 </h1>
+    <button onclick="Plus()"> + </button>
+    <button onclick="Minus()"> - </button>
+
+
+
+
+    <script>
+        function Plus(){
+
+            let h1Element = document.getElementsByTagName('h1')[0]
+
+            let h1Value= parseInt(h1Element.innerText) 
+            let newValue = h1Value + 1
+            h1Element.innerText= newValue
+
+        }
+
+        function Minus(){
+
+            let h1Element = document.getElementsByTagName('h1')[0]
+            let h1Value= parseInt(h1Element.innerText) 
+            let newValue = h1Value-1 
+            h1Element.innerText= newValue
+
+
+
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

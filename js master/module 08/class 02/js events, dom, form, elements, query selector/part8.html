@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create list using Button click </title>
+</head>
+<body>
+   <!--No. 01-->
+   <!--<button onclick="Add()"> Add Number </button>
+
+
+    <ul>
+
+    </ul>
+
+    <script>
+        function Add(){
+            // Create A list item
+            let date= new Date()
+            let item= document.createElement ("li");
+            item.innerText= date.getMilliseconds()
+
+            let Mylist = document.getElementsByTagName('ul')[0]
+            Mylist.appendChild(item)
+
+        }
+    </script>
+    --> 
+
+    
+
+<!-- No. 02 -->
+
+
+    <button onclick="Add()"> Add Number </button>
+
+
+    <h1> 0 </h1>
+    <ul>
+
+    </ul>
+
+    <script>
+        function Add(){
+            // Create A list item
+            
+            Plus()
+            let item= document.createElement ("li");
+            let num= document.getElementsByTagName('h1')[0].innerText
+
+            item.innerText=num 
+
+            let Mylist = document.getElementsByTagName('ul')[0]
+            Mylist.appendChild(item)
+
+        }
+
+        function Plus(){
+
+    let h1Element = document.getElementsByTagName('h1')[0]
+
+    let h1Value= parseInt(h1Element.innerText) 
+    let newValue = h1Value + 1
+    h1Element.innerText= newValue
+
+}
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

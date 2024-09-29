@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Light bulb on off using img src attribute </title>
+</head>
+<body>
+    
+    <img id="imgID" src="light off.webp" alt="">
+
+    <button onclick="ON()"> ON </button>
+    <button onclick="OFF()"> OFF </button>
+
+
+    <button id="toggleID"  onclick="Toggle()"> Light OFF </button>
+
+
+<script>
+    
+    function Toggle(){
+        let imgElement = document.getElementById("imgID")
+        let toggleBtn = document.getElementById ("toggleID")
+
+        if(toggleBtn.innerText==="Light OFF"){
+
+            toggleBtn.innerText="Light ON"
+            imgElement.src= "light on.webp"
+
+        }
+
+        else{
+
+            toggleBtn.innerText="Light OFF"
+            imgElement.src= "light off.webp"
+
+        }
+        
+
+
+
+
+
+
+
+    }
+
+
+    
+    
+    
+    
+    
+    function ON() {
+        let imgElement= document.getElementById("imgID")
+        imgElement.src= "light on.webp"
+
+    }
+    function OFF(){
+
+    let imgElement= document.getElementById("imgID")
+        imgElement.src= "light off.webp"
+
+
+    }
+
+    
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
