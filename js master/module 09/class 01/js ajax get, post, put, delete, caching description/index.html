@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Ajax </title>
+</head>
+<body>
+    
+   
+   <!-- <script>
+
+        getProductListFromBackEnd();
+
+       async function getProductListFromBackEnd() {
+
+            let URL="https://crud.teamrabbil.com/api/v1/ReadProduct"
+            
+            await fetch(URL)
+
+
+
+        }
+        
+        </script>
+--> 
+
+
+<!-- No. 02 -->
+
+<!--
+<h1 id="myData"></h1>
+
+        
+
+
+<script>
+    getProductListFromBackEnd();
+  async function  getProductListFromBackEnd(){
+        let myData= document.getElementById("myData")
+    let URL= "https://crud.teamrabbil.com/api/v1/ReadProduct"
+        
+        myData.innerText= "Loading.............." 
+        let res= await fetch(URL)
+        let data=await res.json()
+
+        
+        myData.innerText=JSON.stringify(data)
+    }
+    
+</script>
+-->
+
+
+<h1 id="myData"></h1>
+
+        
+
+
+<script>
+    getProductListFromBackEnd();
+  async function  getProductListFromBackEnd(){
+       
+    try{
+        debugger;
+        let myData= document.getElementById("myData")
+    let URL= "https://crud.teamrabbil.com/api/v1/ReadProduct"
+        
+        myData.innerText= "Loading.............." 
+        let res= await fetch(URL)
+        let data=await res.json()
+
+        
+        myData.innerText=JSON.stringify(data)
+
+    } /*catch(Exception){
+
+        let myData= document.getElementById("myData")
+        myData.innerText= "Something Went Wrong"
+
+    } 
+*/ 
+
+// Or
+
+
+catch(error){
+
+let myData= document.getElementById("myData")
+myData.innerText= "Something Went Wrong"
+console.log(error)
+}
+    
+    
+    }
+    
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
