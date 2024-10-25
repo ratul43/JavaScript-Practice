@@ -1,0 +1,16 @@
+1. What is NODE JS
+2. Environment installation (NODE + VS Code/ WEB Storm)
+3. How to create first node js app  (npm init --y) + index.js
+4. What is package.json
+5. How to create a node server
+6. Make your First Node JS Website
+7. Section of Response
+    - res.statusCode=401;
+    - res.setHeader('MERN-BATCH', 'N-08')
+    - res.end("Hello Node JS World)
+
+8. Section of Request
+    - 8.1 GET, POST, PUT, DELETE, PATCH
+    - 8.2 Request Header
+
+9. Package Installation 

@@ -1,0 +1,13 @@
+const http=require('http');
+
+const server = http.createServer((req,res)=>{
+
+  let headers = req.headers;
+  //res.end(headers.toString())
+  res.end(JSON.stringify(headers));
+
+})
+
+server.listen(6060,function(){
+    console.log('Server started on port 6060')
+})

@@ -1,0 +1,11 @@
+const { log } = require('console');
+const http=require('http');
+const { hostname } = require('os');
+
+const server = http.createServer((req,res)=>{
+    res.end("Hello NODE JS Server")
+})
+
+server.listen(6060,function(){
+    console.log('Server started on port 6060')
+})
