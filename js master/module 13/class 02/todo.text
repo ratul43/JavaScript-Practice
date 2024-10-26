@@ -1,0 +1,14 @@
+1. What is fs Module
+2. Write a file using fs Module 
+3. Read a file using fs Module 
+4. Update a file using fs Module - Re-write/Append
+5. Delete a file using fs Module
+6. CRUD = Create, Read, Update, Delete
+
+7. Create a folder using fs Module
+8. Delete a folder using fs Module
+9. Read a folder using fs Module
+9. Rename a folder using fs Module
+10. CRUD = Create, Read, Rename, Delete
+
+11. fs will not work on serverless structure like vercel
