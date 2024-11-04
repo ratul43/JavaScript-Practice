@@ -11,6 +11,7 @@
     - yarn add mongoose
     - yarn add nodemailer
     - yarn add nodemon
+    - yarn add express-fileupload
 
 4. File Folder Structure
     - config
