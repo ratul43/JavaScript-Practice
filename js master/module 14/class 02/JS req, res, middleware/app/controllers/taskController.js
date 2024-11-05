@@ -39,7 +39,8 @@ export const demo3 = async (req,res) => {
 }
 
 export const demo4 = async (req,res) => {
-    let myFile = req.files['myFile'];
+
+    let myFile = req.files?.myFile;   // ['myFile']
     let myFilePath = UPLOAD_FOLDER(myFile.name);
     await moveFile(myFile,myFilePath);
 
