@@ -1,0 +1,54 @@
+1. Meet with MongoDB
+2. Tools -> VS Code, VS Code MongoDB Extension, MongoDB Compass
+3. MongoDB Atlas Account Connection String
+
+4. Connect with MongoDB Compass
+5. Connect with VS Code MongoDB Extension
+
+6. Write MongoDB Query
+
+7. Select Data
+db.tasks.find({})
+
+8. Insert Data
+db.tasks.insertOne({
+title:"OSTAD",
+description: "07",
+status: "MongoDB",
+email: "rahimhasan"
+})
+
+db.tasks.insertMany([
+{
+title:"OSTAD",
+description: "07",
+status: "MongoDB",
+email: "rahimhasan"
+},
+db.tasks.insertOne({
+title:"OSTAD",
+description: "07",
+status: "MongoDB",
+email: "rahimhasan"
+
+]
+
+9. Delete Data
+db.tasks.deleteOne(
+{
+_id: ObjectID('349u82vy50ny589')
+}
+)
+
+10. Update Data
+
+db.tasks.updateOne(
+{_id:ObjectID('rcu8oy1723c7')},
+
+{
+$set:{
+title:"New Title",
+description: "New description",
+status: "new status"
+}
+)
